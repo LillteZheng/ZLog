@@ -28,18 +28,18 @@ public class MainActivity extends AppCompatActivity {
                 .isHasSystemPermission(true)
                 .listener(new ZLogListener() {
                     @Override
-                    void onStart() {
+                    public void onStart() {
                         super.onStart();
                         Log.d(TAG, "zsr onStart: ");
                     }
 
                     @Override
-                    void onSuccess(String path) {
+                    public void onSuccess(String path) {
                         Log.d(TAG, "zsr onSuccess: "+path);
                     }
 
                     @Override
-                    void onFail(ZipError errorCode, String errorMsg) {
+                    public void onFail(ZipError errorCode, String errorMsg) {
                         Log.d(TAG, "zsr onFail: "+errorCode+" "+errorMsg);
                     }
                 }).zip();

@@ -5,13 +5,13 @@ package com.zhengsr.zlog;
  * describe：
  */
 public abstract class ZLogListener {
-    void onStart() { }
+    public void onStart() { }
 
     /**
      * 安装成功，你应该使用命令行 sync 去同步，避免拔插U盘后没数据
      * 可以使用 com.jaredrummler:android-shell:1.0.0
      */
-    abstract void onSuccess(String path);
+    public abstract void onSuccess(String path);
 
-    abstract void onFail(ZipError errorCode,String errorMsg);
+    public abstract void onFail(ZipError errorCode,String errorMsg);
 }
