@@ -9,7 +9,7 @@ repositories {
 ```
 
 ```
-implementation 'com.github.LillteZheng:ZLog:v1.1'
+implementation 'com.github.LillteZheng:ZLog:v1.2'
 ```
 
 ```
