@@ -1,0 +1,3 @@
+include ':zlog'
+include ':app'
+rootProject.name = "ZLog"
